@@ -1,0 +1,107 @@
+.pwd-text-hidden{
+  transform: translateX(110%);
+}
+
+.usr-text-hidden{
+  display: none;
+}
+
+/* 主页动画 */
+
+/* for debug: bg-gray-50 */
+/* .motion-title-span{
+  
+  .motion-title-span > i{
+  
+  title div fade-in animation */
+  /* 考虑到不同元素可能延迟时间不同，需要手动在class里添加延迟时间
+  .t-d-fade-in{
+*/
+
+.motion-title-span{
+  animation: .3s swift-up ease-in-out forwards;
+}
+
+.motion-title-span > i{
+  animation: .5s swift-up ease-in-out forwards;
+}
+
+.t-d-fade-in{
+  /* title div fade-in animation */
+  /* 考虑到不同元素可能延迟时间不同，需要手动在class里添加延迟时间 */
+  animation: .5s swift-up ease-in-out forwards,
+  .5s fade-in ease-out forwards;
+}
+
+
+
+p.t-d-fade-in{
+  animation-delay: .8s;
+}
+
+div.t-d-fade-in{
+  animation-delay: 1s;
+}
+
+/* 上滑动画 */
+@keyframes swift-up{
+  to{
+    top:0rem;
+  }
+}
+
+/* 淡入动画 */
+@keyframes fade-in{
+  to {
+    opacity:1;
+  }
+}
+
+/* 摇晃动画 */
+@keyframes shake{
+  10% {
+    transform: translateX(15px);
+  }
+  20% {
+    transform: translateX(-10px);
+  }
+  30% {
+    transform: translateX(5px);
+  }
+  40% {
+    transform: translateX(-5px);
+  }
+  50%,100% {
+    transform: translateX(0px);
+  }
+}
+
+.motion-title-span:nth-of-type(1) i {
+  animation-delay: 0s;
+}
+.motion-title-span:nth-of-type(2) i {
+  animation-delay: 0.2s;
+}
+.motion-title-span:nth-of-type(3) i {
+  animation-delay: 0.4s;
+}
+.motion-title-span:nth-of-type(4) i {
+  animation-delay: 0.6s;
+}
+
+.motion-title-span:nth-of-type(1) {
+  animation-delay: 0s;
+}
+.motion-title-span:nth-of-type(2) {
+  animation-delay: 0.2s;
+}
+.motion-title-span:nth-of-type(3) {
+  animation-delay: 0.4s;
+}
+.motion-title-span:nth-of-type(4) {
+  animation-delay: 0.6s;
+}
+
+.shake-ani{
+  animation: 0.5s ease-in-out 0s normal forwards running shake;
+}

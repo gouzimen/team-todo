@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card-title{
+  @apply text-gray-600 sm:text-xl md:text-2xl md:font-light;
+}
+
+.avatar-div{
+  @apply h-6 w-6 my-1 ml-2 md:h-8 md:w-8 md:pt-1.5 rounded-full text-sm bg-blue-300 text-center;
+}
+
+.avatar-div-r{
+  @apply h-6 w-6 my-1 mr-2 md:h-8 md:w-8 md:pt-1.5 rounded-full text-sm bg-blue-300 text-center;
+}
+
+.page-title{
+  @apply my-3 px-2 text-lg font-medium flex-auto md:text-4xl transition-all duration-500;
+}
+
+
+/* 主页动画 */
+.motion-title-span{
+  /* for debug: bg-gray-50 */
+  @apply overflow-hidden inline-block relative top-4;
+}
+
+.motion-title-span > i{
+  @apply not-italic relative top-10 xl:top-14;
+}
+
+.t-d-fade-in{
+  @apply relative top-4 opacity-0; 
+}
