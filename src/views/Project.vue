@@ -81,17 +81,19 @@
         <div class="flex items-center">
           <span class="card-title">Todo</span>
           <!-- 剩余项目数量 -->
-          <span class="mx-2 px-2 md:py-0.5 md:px-2.5 bg-indigo-100 text-sm text-indigo-400 rounded-md hover:bg-indigo-200 transition-all duration-100">12</span>
+          <span id="count" class="mx-2 px-2 md:py-0.5 md:px-2.5 bg-indigo-100 text-sm text-indigo-400 rounded-md hover:bg-indigo-200 transition-all duration-100">🤔</span>
         </div>
 
         <!-- todo背景卡片 -->
-        <div class="mt-2 p-2 bg-blue-100 rounded-2xl md:rounded-3xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
+        <div id="card-platte" class="mt-2 rounded-3xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
 
           <!-- 添加按钮 -->
           <todo-add></todo-add>
 
 
           <!-- 项目卡片堆 -->
+          <todo-card></todo-card>
+          <todo-card></todo-card>
           <todo-card></todo-card>
           <todo-card></todo-card>
           <todo-card></todo-card>
@@ -296,8 +298,9 @@ export default {
       $('#mask').addClass('invisible');
     }
   },
-  created() {
+  mounted() {
     console.log(this.card);
+    $('#count').html($('#card-platte').children().length-1);
   },
 }
 </script>
