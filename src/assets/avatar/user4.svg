@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="308px" height="308px" viewBox="0 0 308 308" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient x1="0.5" y1="1" x2="0.5" y2="0" id="gradient_1">
+      <stop offset="0" stop-color="#FFC9B2" />
+      <stop offset="1" stop-color="#FFD2C2" />
+    </linearGradient>
+    <linearGradient x1="0.5" y1="0" x2="0.5" y2="1" id="gradient_2">
+      <stop offset="0" stop-color="#1D0024" />
+      <stop offset="1" stop-color="#100014" />
+    </linearGradient>
+    <linearGradient x1="0.5" y1="1" x2="0.5" y2="0" id="gradient_3">
+      <stop offset="0" stop-color="#E6864E" />
+      <stop offset="1" stop-color="#E67240" />
+    </linearGradient>
+    <path d="M150 300C67.1573 300 0 232.843 0 150C0 67.1573 67.1573 0 150 0C232.843 0 300 67.1573 300 150C300 232.843 232.843 300 150 300Z" id="path_1" />
+    <clipPath id="mask_1">
+      <use xlink:href="#path_1" />
+    </clipPath>
+  </defs>
+  <g id="User-04c" transform="matrix(-1 0 0 1 303.5617 3.5617065)">
+    <path d="M150 300C67.1573 300 0 232.843 0 150C0 67.1573 67.1573 0 150 0C232.843 0 300 67.1573 300 150C300 232.843 232.843 300 150 300Z" id="Mask" fill="url(#gradient_1)" fill-rule="evenodd" stroke="none" />
+    <g clip-path="url(#mask_1)">
+      <path d="M58 235C50.6667 249 47 300 47 300L253 300C253 300 249.333 249 242 235C231 214 150 187 150 187C150 187 69 214 58 235Z" id="Rectangle" fill="url(#gradient_2)" fill-rule="evenodd" stroke="none" />
+      <path d="M146 236C146 238.209 147.791 240 150 240C152.209 240 154 238.209 154 236C154 233.791 152.209 232 150 232C147.791 232 146 233.791 146 236ZM146 256C146 258.209 147.791 260 150 260C152.209 260 154 258.209 154 256C154 253.791 152.209 252 150 252C147.791 252 146 253.791 146 256ZM146 276C146 278.209 147.791 280 150 280C152.209 280 154 278.209 154 276C154 273.791 152.209 272 150 272C147.791 272 146 273.791 146 276Z" id="Combined-Shape" fill="#FFFFFF" fill-rule="evenodd" stroke="none" />
+      <path d="M64.5284 175.411L226.986 155.778C234.995 113.259 225.495 86.4704 198.486 75.4111C186 34.5 137.402 37.8276 123.628 41.1629C76.7523 52.5133 57.0524 97.2626 64.5284 175.411Z" id="Combined-Shape" fill="url(#gradient_3)" fill-rule="evenodd" stroke="none" />
+      <path d="M174 199L174 139C199.021 138.626 194.141 95.268 169 108.5C164.5 110.5 153 105 157 91.5C130 111.5 92.3756 76.3991 90 98C85.3248 140.511 94.3705 175.452 118.358 175.454C120.713 175.454 123.008 175.534 126 175L126 199C133.83 203.667 141.66 206 149.49 206C157.32 206 165.49 203.667 174 199Z" id="Mask" fill="#FFDBC9" fill-rule="evenodd" stroke="none" />
+      <path d="M126 175L126 183C141 183 152.667 175.833 161 161.5C151 168.167 139.333 172.667 126 175Z" id="Path-2" fill="#FFBC9E" fill-rule="evenodd" stroke="none" />
+      <path d="M150.033 204.975C143.192 204.648 126 201.108 126 193.46L126 187C124.166 187 118.915 191.332 116.214 195C105.538 209.5 117.38 222.5 127.038 222.5C139.224 222.5 147.298 212.318 150 207.42C152.702 212.318 160.776 222.5 172.962 222.5C182.62 222.5 194.462 209.5 183.786 195C181.085 191.332 175.834 187 174 187L174 193.46C174 201.108 157.26 204.648 150.033 204.975L150.033 204.975Z" id="Combined-Shape" fill="#FFFFFF" fill-rule="evenodd" stroke="none" />
+    </g>
+  </g>
+</svg>

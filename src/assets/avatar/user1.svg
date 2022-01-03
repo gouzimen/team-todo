@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="308px" height="308px" viewBox="0 0 308 308" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient x1="0.5" y1="0" x2="0.5" y2="1" id="gradient_1">
+      <stop offset="0" stop-color="#1D0024" />
+      <stop offset="1" stop-color="#100014" />
+    </linearGradient>
+    <linearGradient x1="0.5" y1="1" x2="0.5" y2="0" id="gradient_2">
+      <stop offset="0" stop-color="#E6864E" />
+      <stop offset="1" stop-color="#E67240" />
+    </linearGradient>
+    <linearGradient x1="0.5" y1="1" x2="0.5" y2="0" id="gradient_3">
+      <stop offset="0" stop-color="#FFC9B2" />
+      <stop offset="1" stop-color="#FFD2C2" />
+    </linearGradient>
+    <linearGradient x1="0.5" y1="0" x2="0.5" y2="1" id="gradient_4">
+      <stop offset="0" stop-color="#FFD4B2" />
+      <stop offset="1" stop-color="#FFDCC2" />
+    </linearGradient>
+    <path d="M150 300C232.843 300 300 232.843 300 150C300 67.1573 232.843 0 150 0C67.1573 0 0 67.1573 0 150C0 232.843 67.1573 300 150 300Z" id="path_1" />
+    <clipPath id="mask_1">
+      <use xlink:href="#path_1" />
+    </clipPath>
+  </defs>
+  <g id="User-01a" transform="translate(3.5616455 3.5616913)">
+    <path d="M150 300C232.843 300 300 232.843 300 150C300 67.1573 232.843 0 150 0C67.1573 0 0 67.1573 0 150C0 232.843 67.1573 300 150 300Z" id="Mask" fill="url(#gradient_1)" fill-rule="evenodd" stroke="none" />
+    <g clip-path="url(#mask_1)">
+      <path d="M222.5 159.5C230.612 132.559 235.612 86.5 201.5 55C175.43 30.9264 105 28.5 80.5 81C76.4101 89.7641 82 103.5 93 103C97.3233 102.803 100 116.5 102.5 125C99 159.5 67.8178 160.137 52 186.5C32.5 219 56.5 267 114 267C171.5 267 204.463 219.404 222.5 159.5Z" id="Combined-Shape" fill="url(#gradient_2)" fill-rule="evenodd" stroke="none" />
+      <path d="M242 238C249.333 252 253 303 253 303L47 303C47 303 50.6667 252 58 238C69 217 150 190 150 190C150 190 231 217 242 238Z" id="Rectangle" fill="url(#gradient_3)" fill-rule="evenodd" stroke="none" />
+      <path d="M174 202C174 202 161.234 209 149.49 209C137.745 209 126 202 126 202L126 180C123.008 180.534 120.713 180.454 118.358 180.454C94.3705 180.452 85.3248 145.511 90 103C93 103 100 103 110 89C107.5 108.5 136.5 105.5 147.5 90C142 108.5 156.5 121 169 113.5C193.511 98.7932 199.021 143.626 174 144L174 202Z" id="Mask" fill="url(#gradient_4)" fill-rule="evenodd" stroke="none" />
+      <path d="M126 180C146 176.5 161 166.5 161 166.5C161 166.5 148.5 188 126 188L126 180Z" id="Path-2" fill="#FFB597" fill-rule="evenodd" stroke="none" />
+      <path d="M150.033 207.975C157.26 207.648 174 204.108 174 196.46L174 190C175.834 190 181.085 194.332 183.786 198C194.462 212.5 182.62 225.5 172.962 225.5C160.776 225.5 152.702 215.318 150 210.42C147.298 215.318 139.224 225.5 127.038 225.5C117.38 225.5 105.538 212.5 116.214 198C118.915 194.332 124.166 190 126 190L126 196.46C126 204.108 143.192 207.648 150.033 207.975L150.033 207.975Z" id="Combined-Shape" fill="#FFFFFF" fill-rule="evenodd" stroke="none" />
+    </g>
+  </g>
+</svg>

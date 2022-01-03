@@ -5,9 +5,16 @@
         </div>
 
         <div class="mt-8 md:mt-0 row-span-3 col-span-2 md:row-span-full md:col-start-2">
-            <select v-model="user" class="block w-full md:w-4/5 rounded-md border-gray-300 shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50">
+            <!-- <select v-model="user" class="block w-full md:w-4/5 rounded-md border-gray-300 shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50">
             <option v-for="mate in card.mates">{{mate}}</option>
-            </select>
+            </select> -->
+
+            <div>
+                <form action="" class="flex overflow-x-auto lg:flex-wrap">
+                    <div class="relative" v-for="mate in card.mates"><input type="radio" name="user" class="absolute right-2 bottom-6"><label for="user1" class="cursor-pointer mr-2 flex flex-col items-center"><img src="" alt="1" class="w-16"><p class="">{{mate}}</p></label></div>
+                </form>
+            </div>
+
 
             <div class="mt-8 md:mt-4 flex">
             <button @click="toProject" class="mr-8 text-blue-400 active:text-blue-200 text-lg">
@@ -39,7 +46,9 @@ export default {
     },
     methods: {
         toProject(){
-            if (this.user==''){
+            this.user=$('input[name="user"]:checked+label p').html();
+            console.log('user:'+this.user);
+            if (this.user==''||this.user==undefined){
                 alert('请选择您的身份');
             }
             else{
@@ -67,9 +76,19 @@ export default {
             });
         },
     },
-    // created() {
-    //     console.log(this.card.mates);
-    // },
+    mounted() {
+        // console.log(this.card.mates);
+        var amount = $('form').children().length;
+        console.log('form child:'+amount);
+        var i,j;
+        for (i=0;i<amount;i++){
+            j=i;j++;
+            let path = '../src/assets/avatar/user'+j+'.svg';
+            console.log('img path:'+path);
+            $('.relative:nth-child('+j+') img').attr('src',path);
+        }
+
+    },
 }
 </script>
 

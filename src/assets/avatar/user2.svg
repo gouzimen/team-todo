@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="308px" height="308px" viewBox="0 0 308 308" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient x1="0.5" y1="0" x2="0.5" y2="1" id="gradient_1">
+      <stop offset="0" stop-color="#806A6A" />
+      <stop offset="1" stop-color="#665654" />
+    </linearGradient>
+    <linearGradient x1="0.5" y1="0" x2="0.5" y2="1" id="gradient_2">
+      <stop offset="0" stop-color="#F7B186" />
+      <stop offset="1" stop-color="#FFC299" />
+    </linearGradient>
+    <linearGradient x1="0.5" y1="1" x2="0.5" y2="0" id="gradient_3">
+      <stop offset="0" stop-color="#FFC9B2" />
+      <stop offset="1" stop-color="#FFD2C2" />
+    </linearGradient>
+    <path d="M150 300C232.843 300 300 232.843 300 150C300 67.1573 232.843 0 150 0C67.1573 0 0 67.1573 0 150C0 232.843 67.1573 300 150 300Z" id="path_1" />
+    <path d="M225 52.3078C231.347 65.2124 236.347 86.5457 240 116.308L0 116.308C3.65493 86.5424 8.65493 65.209 15 52.3078C21.3242 39.4491 80 14.6989 80 14.6989C80 14.6989 81.1684 3.38526 84 1.76364C86.8316 0.142011 152.627 0.142186 156 1.76364C159.373 3.38509 160 14.6922 160 14.6922C160 14.6922 218.688 39.4748 225 52.3078Z" id="path_2" />
+    <clipPath id="mask_1">
+      <use xlink:href="#path_1" />
+    </clipPath>
+    <clipPath id="mask_2">
+      <use xlink:href="#path_2" />
+    </clipPath>
+  </defs>
+  <g id="User-02b" transform="translate(3.5617065 3.5616913)">
+    <path d="M150 300C232.843 300 300 232.843 300 150C300 67.1573 232.843 0 150 0C67.1573 0 0 67.1573 0 150C0 232.843 67.1573 300 150 300Z" id="Mask" fill="url(#gradient_1)" fill-rule="evenodd" stroke="none" />
+    <g clip-path="url(#mask_1)">
+      <path d="M182 176L182 204L118 204C118 204 118.12 162.602 118 135.188C103.668 116.611 103.668 105 115 93C126.332 81 207 75 207 75C207 75 213.052 133.21 214 149C214.381 155.35 218.5 176 202.5 176C193.504 176 182 176 182 176Z" id="Mask" fill="url(#gradient_2)" fill-rule="evenodd" stroke="none" />
+      <path d="M182 174C160 171.5 145 162 145 162C145 162 152 181 182 187L182 174Z" id="Path-48" fill="#F08956" fill-rule="evenodd" stroke="none" />
+      <path d="M131.02 105.205C127.84 102.474 123.976 100.635 118.514 103.473C105.565 110.201 114.159 136.135 128.65 135.629C133.647 135.454 131.358 145.419 118 152C118 141.5 102 115.5 100.605 91.8275C84.5 85.8327 88.5 61.8458 99.5576 61.8458C97.7891 39.8543 133 28.5 146.634 41.116C160.5 24.5 195.5 33 197.614 47.4149C221.68 34.5672 237.5 71.5 214.965 85.8327C205.692 91.7303 184 93.9778 152.688 93.9778C137.661 93.9778 146.303 129.148 151 140.5C157 155 190.5 157 201 155.5C209.199 154.329 213.5 151 214 149C221.5 169 212 181 197 181C171.5 181 146 173.5 142 155C138.817 140.277 138.991 116.516 131.02 105.205Z" id="Combined-Shape" fill="#FFFFFF" fill-rule="evenodd" stroke="none" />
+      <g id="Group-2" transform="translate(30 191)">
+        <path d="M225 52.3078C231.347 65.2124 236.347 86.5457 240 116.308L0 116.308C3.65493 86.5424 8.65493 65.209 15 52.3078C21.3242 39.4491 80 14.6989 80 14.6989C80 14.6989 81.1684 3.38526 84 1.76364C86.8316 0.142011 152.627 0.142186 156 1.76364C159.373 3.38509 160 14.6922 160 14.6922C160 14.6922 218.688 39.4748 225 52.3078Z" id="Combined-Shape" fill="url(#gradient_3)" fill-rule="evenodd" stroke="none" />
+        <g clip-path="url(#mask_2)">
+          <path d="M-16 43L-16 35L253 35L253 43L-16 43ZM-16 63L-16 55L253 55L253 63L-16 63ZM-16 83L-16 75L253 75L253 83L-16 83ZM-16 103L-16 95L253 95L253 103L-16 103Z" id="Combined-Shape" fill="#FFA789" fill-rule="evenodd" stroke="none" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
