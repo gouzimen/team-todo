@@ -1,5 +1,5 @@
 <template>
-    <div class="h-screen bg-gray-50 md:bg-bluegray-50 transition-colors">
+    <div class="h-screen transition-colors">
     <!-- 标题栏 -->
     <div
       class="bg-gray-200 text-bluegray-800 flex content-start sticky top-0 md:bg-bluegray-200 md:flex-col transition-all">
