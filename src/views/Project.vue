@@ -195,12 +195,12 @@
           <!-- 标题 -->
           <label class="block">
             <span class="block text-gray-700">标题</span>
-            <input type="text" class="mt-1 p-2 block uppercase w-full rounded-md outline-none border-2 border-gray-300 shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50" placeholder="" />
+            <input type="text" v-model="card.title" class="mt-1 p-2 block uppercase w-full rounded-md outline-none border-2 border-gray-300 shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50" placeholder="" />
           </label>
           <!-- 描述 -->
           <label class="mt-2 block">
             <span class="block text-gray-700">描述</span>
-            <input type="text" class="mt-1 p-2 block w-full rounded-md outline-none border-2 border-gray-300 shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50" placeholder="" />
+            <input type="text" v-model="card.desc" class="mt-1 p-2 block w-full rounded-md outline-none border-2 border-gray-300 shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50" placeholder="" />
           </label>
         </form>
 
