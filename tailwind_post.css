@@ -2,49 +2,49 @@
 @tailwind components;
 @tailwind utilities;
 
-.card-title{
+.card-title {
   @apply text-gray-600 sm:text-xl md:text-2xl md:font-light;
 }
 
-.card-list{
+.card-list {
   @apply p-4 mx-2 my-4 rounded-lg border-2 border-gray-300;
 }
 
-.avatar-div{
+.avatar-div {
   @apply h-6 w-6 my-1 ml-2 md:h-8 md:w-8 md:pt-1.5 rounded-full text-sm bg-bluegray-200 text-center;
 }
 
-.avatar-div-r{
+.avatar-div-r {
   @apply h-6 w-6 my-1 mr-2 md:h-8 md:w-8 md:pt-1.5 rounded-full text-sm bg-bluegray-200 text-center;
 }
 
-.page-title{
+.page-title {
   @apply my-3 px-2 text-lg font-medium flex-auto md:text-4xl transition-all duration-500;
 }
 
 /* new avatar list */
-.avatar-list{
+.avatar-list {
   @apply flex p-1 h-8 w-8 bg-white rounded-full align-middle justify-center;
 }
 
-.todo-card-avatar{
+.todo-card-avatar {
   @apply avatar-list mr-1 my-1;
 }
 
-.card-avatar{
+.card-avatar {
   @apply avatar-list mr-2 mt-2;
 }
 
 /* 主页动画 */
-.motion-title-span{
+.motion-title-span {
   /* for debug: bg-gray-50 */
   @apply overflow-hidden inline-block relative top-4;
 }
 
-.motion-title-span > i{
+.motion-title-span > i {
   @apply not-italic relative top-10 xl:top-14;
 }
 
-.t-d-fade-in{
-  @apply relative top-4 opacity-0; 
+.t-d-fade-in {
+  @apply relative top-4 opacity-0;
 }
