@@ -18,24 +18,55 @@
     </div>
 
     <!-- 项目列表 -->
-    <div class="p-2 overflow-y-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+    <!-- <div class="p-2 overflow-y-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
 
-      <!-- 添加项目的卡片 -->
-      <!-- <button class="m-2 p-4 rounded-2xl bg-blue-100 text-blue-400 hover:bg-blue-200 hover:text-blue-500 active:bg-blue-300 transition focus:ring focus:ring-blue-300 ring-offset-2">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
-          </svg>
-      </button> -->
-      <add-card @click="addProject"></add-card>
-
-
+      <add-card @click="addProject"></add-card> -->
       <!-- 项目卡片 -->
-      <project-card v-for="card in cards" :card="card">
+      <!-- <project-card v-for="card in cards" :card="card">
       </project-card>
       
-    </div>
-  </div>
+    </div> -->
 
+    <!-- 项目列表 -->
+    <div class="p-2 overflow-y-auto grid grid-cols-1 md:grid-cols-3">
+
+      <!-- 正在进行列表 -->
+      <div class="flex-col">
+        <div class="card-list">
+          <h2 class="font-bold text-lg">正在进行</h2>
+          <div class="py-2">
+            <!-- 卡片列表 -->
+            <project-card v-for="card in cards.card_working" :card="card"></project-card>
+          </div>
+        </div>
+      </div>
+
+      <!-- 等待列表 -->
+      <div class="flex-col">
+        <div class="card-list">
+          <h2 class="font-bold text-lg">等待开始</h2>
+          <div class="py-2">
+            <!-- 卡片列表 -->
+            <project-card v-for="card in cards.card_tostart" :card="card"></project-card>
+          </div>
+        </div>
+      </div>
+
+      <!-- 已完成列表 -->
+      <div class="flex-col">
+        <div class="card-list">
+          <h2 class="font-bold text-lg">已完成</h2>
+          <div class="py-2">
+            <!-- 卡片列表 -->
+            <project-card v-for="card in cards.card_finished" :card="card"></project-card>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <add-card @click="addProject"></add-card>
 </template>
 
 <script>
@@ -56,7 +87,11 @@ export default {
         //   mates:['A', '王', '刘旭'],
         //   projectID:"1"
         // },
-        cards:[],
+        cards:{
+          card_working:[],
+          card_tostart:[],
+          card_finished:[]
+        },
       }
     },
     components:{
@@ -66,6 +101,9 @@ export default {
     created(){
       // Panel组件创建完毕
       console.log('panel created');
+      // 初始化日期，后面要用到
+      var date = new Date();
+
       this.$socket.emit('queryProjList',this.groupName,this.code,projList=>{
         // 获取卡片列表
         console.log(projList);
@@ -80,14 +118,49 @@ export default {
 
             project.proj_desc=='' ? project.proj_desc='无描述':0;
 
-            this.cards.push({
-              'title':project.proj_name,
-              'desc':project.proj_desc,
-              'progress':project.proj_progress,
-              'lastchange':project.proj_updated,
-              'mates':mateList,
-              'projectID':project.id,
-            })
+            // 处理时间
+            var time = project.proj_updated;
+            time = time.slice(0,16).replace('T',' ');
+            if(date.getFullYear == time.slice(0,4)){
+              // 是今年
+              time=time.slice(5,16);
+            }
+            else{
+              time=time.slice(2,16);
+            }
+            project.proj_updated = time;
+
+            if (project.proj_progress<=0) {
+              this.cards.card_tostart.push({
+                'title':project.proj_name,
+                'desc':project.proj_desc,
+                'progress':project.proj_progress,
+                'lastchange':project.proj_updated,
+                'mates':mateList,
+                'projectID':project.id,
+              })
+            }
+            else if(project.proj_progress<100){
+              this.cards.card_working.push({
+                'title':project.proj_name,
+                'desc':project.proj_desc,
+                'progress':project.proj_progress,
+                'lastchange':project.proj_updated,
+                'mates':mateList,
+                'projectID':project.id,
+              })
+            }
+            else{
+              this.cards.card_finished.push({
+                'title':project.proj_name,
+                'desc':project.proj_desc,
+                'progress':project.proj_progress,
+                'lastchange':project.proj_updated,
+                'mates':mateList,
+                'projectID':project.id,
+              })
+
+            }
           })
         });
 
