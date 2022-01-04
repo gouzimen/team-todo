@@ -1,7 +1,7 @@
 <template>
   <div class="grid grid-rows-4 grid-cols-2 md:items-center p-8 h-screen">
     <div class="col-start-1 col-span-2 self-end md:col-span-1 md:row-span-full md:self-center md:justify-self-center p-2">
-      <h1 class="text-4xl font-medium leading-snug">选择<br />进入“xxx”项目<br class="md:hidden" />的身份</h1>
+      <h1 class="text-4xl font-medium leading-snug">选择<br />进入“{{ card.title }}”项目<br class="md:hidden" />的身份</h1>
     </div>
 
     <div class="mt-8 md:mt-0 row-span-3 col-span-2 md:row-span-full md:col-start-2">
@@ -13,7 +13,7 @@
         <form action="" class="flex overflow-x-auto lg:flex-wrap">
           <div class="relative" v-for="mate in card.mates">
             <input type="radio" name="user" class="absolute right-2 bottom-6" /><label for="user1" class="cursor-pointer mr-2 flex flex-col items-center"
-              ><img src="" alt="1" class="w-16" />
+              ><img :src="getImageUrl(mate)" alt="1" class="w-16" />
               <p class="">{{ mate }}</p></label
             >
           </div>
@@ -78,19 +78,28 @@ export default {
         },
       });
     },
+    detectNumber(mate) {
+      var i = 0;
+      console.log(mate);
+      for (; mate != this.card.mates[i]; i++);
+      return i % 6;
+    },
+    getImageUrl(mate) {
+      return new URL(`../assets/avatar/user${this.detectNumber(mate)}.svg`, import.meta.url).href;
+    },
   },
   mounted() {
-    // console.log(this.card.mates);
-    var amount = $("form").children().length;
-    console.log("form child:" + amount);
-    var i, j;
-    for (i = 0; i < amount; i++) {
-      j = i;
-      j++;
-      let path = "../src/assets/avatar/user" + j + ".svg";
-      console.log("img path:" + path);
-      $(".relative:nth-child(" + j + ") img").attr("src", path);
-    }
+    console.log(this.card.mates);
+    // var amount = $("form").children().length;
+    // console.log("form child:" + amount);
+    // var i, j;
+    // for (i = 0; i < amount; i++) {
+    //   j = i;
+    //   j++;
+    //   let path = "../src/assets/avatar/user" + j + ".svg";
+    //   console.log("img path:" + path);
+    //   $(".relative:nth-child(" + j + ") img").attr("src", path);
+    // }
   },
 };
 </script>
