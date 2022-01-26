@@ -30,8 +30,8 @@
         <!-- 密码框隐藏在外面 -->
         <input id="passwdText" type="password" placeholder="密码" v-model="passwd" :class="{ 'pwd-text-hidden': PwdTextHidden }" class="h-10 xl:h-12 my-1 ml-0 px-3 py-3 flex-shrink-0 mr-16 placeholder-gray-400 text-gray-600 bg-white rounded-lg xl:rounded-2xl text-sm xl:text-lg border border-gray-400 outline-none focus:outline-none focus:ring focus:ring-indigo-300 transition-all w-full" />
       </form>
-      <button @click="NextStep" class="ml-2 px-3 py-3 h-10 w-10 xl:h-12 xl:w-12 bg-indigo-400 text-white active:bg-indigo-500 rounded-xl xl:rounded-2xl shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 xl:h-6 xl:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <button @click="NextStep" class="ml-2 h-10 w-10 xl:h-12 xl:w-12 bg-indigo-400 text-white rounded-xl xl:rounded-2xl shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
+        <svg xmlns="http://www.w3.org/2000/svg" class="p-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
         </svg>
       </button>
