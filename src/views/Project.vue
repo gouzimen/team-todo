@@ -2,7 +2,7 @@
   <div class="h-screen flex flex-col overflow-hidden">
     <!-- 标题栏 -->
     <div class="bg-gray-200 p-2 flex content-start sticky top-0 md:bg-white md:flex-col transition-colors duration-500">
-      <button @click="toPanel" class="m-3 h-8 w-8 hover:bg-gray-50 rounded-lg transition-all duration-100 focus:ring focus:ring-gray-100">
+      <button @click="toPanel" class="m-3 h-8 w-8 hover:bg-gray-50 rounded-lg transition-all duration-100 focus:ring focus:ring-gray-100 active-ani-left">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 m-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
         </svg>
