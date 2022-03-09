@@ -1,7 +1,7 @@
-# Team-ToDo
+# Team Todo
 ## 🧱 项目组件
-- Team-ToDo：前端
-- Team-Server：服务端
+- Team Todo 客户端
+- Team Server 服务端：https://github.com/huuhghhgyg/team-todo
 
 ## 🔧 安装说明
 安装包依赖项
